@@ -1,0 +1,150 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "value": "infy",
+      "display": "InfoSys"
+    },
+    {
+      "id": 2,
+      "value": "cts",
+      "display": "Cognizant"
+    },
+    {
+      "id": 3,
+      "value": "hcl",
+      "display": "HCL"
+    },
+    {
+      "id": 4,
+      "value": "tcs",
+      "display": "TATA Consultancy"
+    }
+  ],
+  "groupMessage": [
+    {
+      "groupId": 3,
+      "username": "Mani",
+      "date": "2019-11-28T09:29:02.260Z",
+      "gender": "male",
+      "message": "hi",
+      "id": 1
+    },
+    {
+      "groupId": 3,
+      "username": "Priya",
+      "date": "2019-11-28T09:29:26.523Z",
+      "gender": "feMale",
+      "message": "hi all",
+      "id": 2
+    },
+    {
+      "groupId": 3,
+      "username": "Mani",
+      "date": "2019-11-28T09:29:45.940Z",
+      "gender": "male",
+      "message": "Hi team",
+      "id": 3
+    },
+    {
+      "groupId": 2,
+      "username": "Mani",
+      "date": "2019-11-28T09:37:23.004Z",
+      "gender": "male",
+      "message": "hi priya",
+      "id": 4
+    },
+    {
+      "groupId": 2,
+      "username": "Priya",
+      "date": "2019-11-28T09:37:34.461Z",
+      "gender": "feMale",
+      "message": "Hi mani",
+      "id": 5
+    },
+    {
+      "groupId": 3,
+      "username": "Priya",
+      "date": "2019-11-28T09:50:26.565Z",
+      "gender": "feMale",
+      "message": "hi",
+      "id": 6
+    },
+    {
+      "groupId": 3,
+      "username": "Priya",
+      "date": "2019-11-28T09:50:51.244Z",
+      "gender": "feMale",
+      "message": "hi mani",
+      "id": 7
+    },
+    {
+      "groupId": 3,
+      "username": "Mani",
+      "date": "2019-11-28T09:51:06.334Z",
+      "gender": "male",
+      "message": "yes priya",
+      "id": 8
+    },
+    {
+      "groupId": 2,
+      "username": "Priya",
+      "date": "2019-11-28T10:00:41.173Z",
+      "gender": "feMale",
+      "message": "hello all",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Mani",
+      "email": "mani@test.com",
+      "gender": "male",
+      "username": "mani",
+      "password": "mani123",
+      "acceptTerms": true,
+      "id": 1
+    },
+    {
+      "firstName": "Priya",
+      "email": "pirya@test.com",
+      "gender": "feMale",
+      "username": "priya",
+      "password": "priya123",
+      "acceptTerms": true,
+      "id": 2
+    }
+  ],
+  "userGroup": [
+    {
+      "userId": 1,
+      "groupName": "HCL",
+      "groupId": 3,
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "groupName": "HCL",
+      "groupId": 3,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "groupName": "Cognizant",
+      "groupId": 2,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "groupName": "Cognizant",
+      "groupId": 2,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "groupName": "TATA Consultancy",
+      "groupId": 4,
+      "id": 5
+    }
+  ]
+}
