@@ -1,0 +1,17 @@
+
+  <nav class="navbar navbar-expand-md navbar-dark header-bg ing-theme-color mb-4" >
+
+    <a class="navbar-brand" routerLink="/" alt="Logo">Logo</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse" [ngClass]="{'show toggle-height': toggleFlag}">
+      <div class="user-details" *ngIf="userDetails?.name" [ngClass]="{'show toggle-class': toggleFlag}">
+        Welcome, <strong>{{userDetails?.name}}</strong>
+        <button class="btn btn-primary count" (click)="navigateGroupPage()">{{userDetails?.group}}</button>
+        <button class="btn btn-primary logout" type="submit" (click)="logout()">Logout</button>
+      </div>
+    </div>
+</nav>

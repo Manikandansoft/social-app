@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Mani",
+        "dob": "2/8/92",
+        "address": "4/545, MG street, Coimbatore",
+        "gender": "Male"
+
+    },
+    {
+        "name": "Ramesh",
+        "dob": "2/8/92",
+        "address": "4/545, MG street, Coimbatore",
+        "gender": "Male"
+
+    },
+    {
+        "name": "Siva",
+        "dob": "2/8/92",
+        "address": "4/545, MG street, Coimbatore",
+        "gender": "Male"
+
+    },
+    {
+        "name": "Raj",
+        "dob": "2/8/92",
+        "address": "4/545, MG street, Coimbatore",
+        "gender": "Male"
+
+    },
+    {
+        "name": "Venkat",
+        "dob": "2/8/92",
+        "address": "4/545, MG street, Coimbatore",
+        "gender": "Female"
+
+    }
+]

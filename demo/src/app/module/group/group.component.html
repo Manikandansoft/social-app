@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-md-3">
+        <h4 class="heading">Groups</h4>
+        <div class="menu-container">
+            <ul>
+                <li *ngFor="let group of userGroups" (click)="selectedGroup(group)"
+                    [ngClass]="{'active-menu': selected.groupName === group.groupName}">{{group.groupName}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4 class="heading">{{selected?.groupName}}
+            <a class="btn btn-primary back" title="Back to Group" routerLink="/home">Back</a>
+        </h4>
+        <div class="card gedf-card">
+            <div class="message-header">
+                <div class="card gedf-card">
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active">
+                                <div class="form-group">
+                                    <label class="sr-only" for="message">post</label>
+                                    <textarea class="form-control" id="message" rows="2"
+                                        placeholder="What are you thinking?" [(ngModel)]="message"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btn-toolbar justify-content-between float-sm-right">
+                            <div class="btn-group">
+                                <button type="submit" id="submit" class="btn btn-primary border-none ing-theme-color" (click)="postMessage()">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-body">
+                <div class="card-header" *ngFor="let message of groupMessageList">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-2">
+                                <img class="rounded-circle" width="45" src="../assets/img/{{message.gender}}.png" alt="Default image">
+                            </div>
+                            <div class="ml-2">
+                                <div class="h5 m-0"></div>
+                                <div class="h7 text-muted">{{message.username}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>{{message.date | date:'d/M/yy h:mm a'}}</div>
+                        <p class="card-text">
+                            {{message.message}}
+                        </p>
+                    </div>
+                </div>
+                <div class="card-header" *ngIf="!groupMessageList?.length">
+                    <p class="card-text no-message">No post are added yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

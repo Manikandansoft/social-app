@@ -1,0 +1,19 @@
+<div  class="modal"  [ngClass]="{'show fade': alertObj?.modalShow}">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title heading">{{alertObj?.header}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{alertObj?.message}}.</p>
+      </div>
+      <div class="modal-footer">
+        <span *ngFor="let btn of alertObj?.button">
+          <button type="button" mat-raised-button class="btn btn-primary border-none ing-theme-color"
+            (click)="btnAction(btn)">{{btn}}</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

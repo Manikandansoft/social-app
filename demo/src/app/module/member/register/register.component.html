@@ -1,0 +1,81 @@
+<div class="container register-container">
+    <div class="row">
+        <div class="col-md-6 login-form">
+            <h3>Register</h3>
+            <form [formGroup]="registerForm" (ngSubmit)="signUp()">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name *" id="firstName"
+                        formControlName="firstName" />
+                    <div class="error"
+                        *ngIf="submitted  && register.firstName.errors && register.firstName.errors.required ">
+                        Name is <strong>required</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email *" id="email"
+                        formControlName="email" />
+                    <div class="error" *ngIf="submitted  && register.email.errors && register.email.errors.required">
+                        Email is <strong>required</strong>
+                    </div>
+                    <div class="error" *ngIf="submitted  && register.email.errors && register.email.errors.email">Email
+                        must be a valid email address</div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username *" id="username"
+                        formControlName="username" />
+                    <div class="error"
+                        *ngIf="submitted  && register.username.errors  && register.username.errors.required">
+                        Username is <strong>required</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="male" value="male"
+                        formControlName="gender">
+                        <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="feMale"  value="feMale"
+                        formControlName="gender">
+                        <label class="custom-control-label" for="feMale">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Your Password *"
+                        formControlName="password" />
+                    <div class="error"
+                        *ngIf="submitted  && register.password.errors  && register.password.errors.required">
+                        Password is <strong>required</strong>
+                    </div>
+                    <div class="error"
+                        *ngIf="register.password.errors  && register.password.errors.minlength">Password
+                        must be at least 6 characters</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirm Password *" id="confirmPassword"
+                        formControlName="confirmPassword" />
+                    <div class="error"
+                        *ngIf="submitted  && register.confirmPassword.errors  && register.confirmPassword.errors.required">
+                        Confirm Password is <strong>required</strong>
+                    </div>
+                    <div class="error"
+                        *ngIf="register.confirmPassword.errors && register.confirmPassword.errors.mustMatch">Passwords
+                        must match</div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" formControlName="acceptTerms" class="form-check-input" />
+                    <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
+                    <div *ngIf="submitted && register.acceptTerms.errors  && register.acceptTerms.errors.required"
+                        class="error">Accept Ts & Cs is <strong>required</strong></div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btnSubmit">Sign Up</button>
+                    <a routerLink="/login" class="btn btnSubmit">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<app-spinner [spinner]="spinner"></app-spinner>
+<app-alert [alertObj]="api.alertConfig" *ngIf="api.alertConfig?.modalShow" ></app-alert>

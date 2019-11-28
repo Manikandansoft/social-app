@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+ 
+}
+.page-footer {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  color:#fff;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.login-form {
+  padding: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  background: transparent;
+}
+.login-form h3 {
+  color: #ff6200;
+  text-align: left;
+  padding: 0 10%;
+}
+.login-container form, .register-container form {
+  padding: 5% 10%;
+}
+.btnSubmit {
+  border-radius: 1rem;
+  padding: 2% 3.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form .btnSubmit {
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff6200;
+  float: right;
+}
+.login-form .ForgetPwd {
+  color: #ff6200;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 80%;
+}
+.error{
+  font-size: 80%;
+  font-style: italic;
+  color: #f44336;
+  padding: 2px;
+}
+.ui-listbox {
+  height: 495px;
+  width: 220px !important;
+}
+.heading {
+  color: #ff6200;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.ing-theme-color {
+  background: #ff6200;
+}
+.ui-card {
+  color: #ff6200;
+}
+.ui-card-content {
+  color: #333;
+}
+.join, .join:hover{
+  background: #ff6200;
+  color: #fff;
+  border:none;
+}
+.border-none {
+    border: none;
+}
+.ui-card-title {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ff6200;
+}

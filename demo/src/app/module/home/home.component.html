@@ -1,0 +1,18 @@
+<div class="home-container">
+    <div class="row padding-adjust">
+        <div *ngFor="let group of filteredList" class="col-md-4 margin-bottom">
+            <p-card header="{{group.display}}">
+                Welcome to {{group.display}} this group
+                <p-footer>
+                    <button class="btn btn-primary join " (click)="joinGroup(group)"> Join</button>
+                </p-footer>
+            </p-card>
+        </div>
+        <div class="no-group" *ngIf="!filteredList?.length">
+            <p-card header="New groups is not added yet"></p-card>
+        </div>
+    </div>
+</div>
+<app-alert [alertObj]="api.alertConfig" *ngIf="api.alertConfig?.modalShow" (buttonAction)="modalAction($event)">
+</app-alert>
+<app-spinner [spinner]="spinner"></app-spinner>

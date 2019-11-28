@@ -1,0 +1,29 @@
+<div class="container login-container ">
+    <div class="row">
+        <div class="col-md-6 login-form">
+            <h3>Sign In</h3>
+            <form [formGroup]="loginForm" (ngSubmit)="onClickSubmit()">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username *" name="username"
+                        formControlName="username" required />
+                    <div class="error" *ngIf="submitted  && login.username.errors  && login.username.errors.required">
+                        Username is <strong>required</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Your Password *"
+                        formControlName="password" required />
+                    <div class="error" *ngIf="submitted  && login.password.errors  && login.password.errors.required">
+                        Password is <strong>required</strong>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a routerLink="/register" class="ForgetPwd" title="Sign up">Not an member? Sign up here.</a>
+                    <button class="btnSubmit" aria-label="SignIn">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<app-spinner [spinner]="spinner"></app-spinner>
+<app-alert [alertObj]="api.alertConfig" *ngIf="api.alertConfig?.modalShow" (buttonAction)="modalAction($event)"></app-alert>

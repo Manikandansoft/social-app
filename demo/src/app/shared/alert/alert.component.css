@@ -1,0 +1,11 @@
+.show {
+    display: block;
+    background: #292525a1;
+}
+.show .modal-dialog{
+    position: relative;
+    top: 12%;
+}
+.btn-primary:hover{
+    background: #ff6200;
+}

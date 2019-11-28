@@ -1,0 +1,14 @@
+.home-container {
+    min-height: 79vh;
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.padding-adjust {
+    padding: 21px 18px;
+}
+.no-group{
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,76 @@
+body {
+    background-color: #eeeeee;
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}
+
+.message-body {
+    min-height: 300px;
+    max-height: 300px;
+    overflow-x: auto;
+}
+.menu-padding{
+    padding: 10px 0px;
+}
+.menu-container {
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #ff6200;;
+    color: #fff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.menu-container ul li {
+    margin: 0;
+    padding: 0.429em 0.857em;
+    border-radius: 0;
+    list-style: none;
+    cursor: pointer;
+}
+.menu-container ul{
+    padding: 0;
+}
+.active-menu {
+    background: #fff;
+    border-right: 5px solid #21252973;
+    color: #ff6200;
+    font-weight: 500;
+}
+
+.back{
+    color: #fff;
+    position: relative;
+    right: 7px;
+    float: right;
+    padding: 2px 10px;
+    font-size: 14px;
+    top: 3px;
+    background: #ff6200;
+    border: none;
+}
+.no-message{
+    font-size: 14px;
+    font-weight: 500;
+}
